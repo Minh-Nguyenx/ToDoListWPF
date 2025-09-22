@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Release\
 ToDoListWPFApp
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\App.xaml
 3-630875497
 
-8713404292
+71555763659
 13-1505183044
 Login.xaml;MainWindow.xaml;Register.xaml;
 
