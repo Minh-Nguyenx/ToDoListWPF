@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ToDoListWPFApp",
+    "\\ToDoListWPFApp\\ToDoListWPFApp"
   ],
-  "SelectedNode": "\\D:\\CS 464 AE\\TodoList",
+  "SelectedNode": "\\ToDoListWPFApp\\ToDoListWPFApp\\Register.xaml",
   "PreviewInSolutionExplorer": false
 }
