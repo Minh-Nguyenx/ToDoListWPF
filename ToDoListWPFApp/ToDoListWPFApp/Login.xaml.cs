@@ -19,9 +19,38 @@ namespace ToDoListWPFApp
     /// </summary>
     public partial class Login : Window
     {
+        ToDoListDBEntities db = new ToDoListDBEntities();
+
+        public static int userid;
         public Login()
         {
             InitializeComponent();
+        }
+
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        {
+            Register register = new Register();
+            register.Show();
+            this.Hide();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            String username = UsernameBox.Text.Trim();
+            String password = PasswordBox.Password.Trim();
+
+            var user = db.Users.FirstOrDefault(u => u.username == username && u.password == password);
+            if(user != null)
+            {
+                userid = user.iduser;
+                MainWindow main = new MainWindow();
+                main.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Dang nhap that bai");
+            }
         }
     }
 }

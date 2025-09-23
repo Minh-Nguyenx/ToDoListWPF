@@ -5,8 +5,77 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ToDoListWPFApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="To-Do App" Height="600" Width="820" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <!-- Nút chính -->
+        <Style TargetType="Button" x:Key="PrimaryButton">
+            <Setter Property="Background" Value="#2b7bd3"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="10,4"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="6"
+                                SnapsToDevicePixels="True">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#1a5ebd"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <LinearGradientBrush x:Key="BgGradient" StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#2b7bd3" Offset="0"/>
+            <GradientStop Color="#7fb3e6" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Resources>
+
+    <Grid Background="{StaticResource BgGradient}" >
+        <Border Width="700" Height="520" 
+                Background="White" CornerRadius="12" 
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                Padding="20" BorderBrush="#ddd" BorderThickness="1">
+            <StackPanel>
+                <!-- Tiêu đề -->
+                <TextBlock Text="YourList" 
+                           FontSize="32" FontWeight="Bold" 
+                           Foreground="#2b7bd3"
+                           Margin="0,0,0,20"
+                           HorizontalAlignment="Center"
+                           />
+
+                <!-- Thanh thêm công việc -->
+                <DockPanel Margin="0,0,0,20" HorizontalAlignment="Center">
+                    <TextBox x:Name="NewTaskBox"
+                             Height="44"
+                             FontSize="15"
+                             Padding="10"
+                             VerticalAlignment="Center"
+                             DockPanel.Dock="Left"
+                             Width="300"
+                             />
+                    <Button Content="Add Task"
+                            Width="120" Height="44"
+                            Margin="10,0,0,0"
+                            DockPanel.Dock="Right"
+                            Style="{StaticResource PrimaryButton}"
+                            Click="AddTask_Click"/>
+                </DockPanel>
+
+                <!-- Danh sách Todo -->
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel x:Name="TasksPanel" Orientation="Vertical" />
+                </ScrollViewer>
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>

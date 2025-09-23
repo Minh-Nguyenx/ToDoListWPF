@@ -6,3 +6,30 @@ D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\App.g.cs
 D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp_Content.g.cs
 D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp_MarkupCompile.cache
 D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp_MarkupCompile.lref
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.csproj.AssemblyReference.cache
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\Login.g.cs
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\MainWindow.g.cs
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\Register.g.cs
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\App.g.cs
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp_Content.g.cs
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp_MarkupCompile.cache
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp_MarkupCompile.lref
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\ToDoListDB.mdf
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\ToDoListDB_log.ldf
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\ToDoListWPFApp.exe.config
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\ToDoListWPFApp.exe
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\ToDoListWPFApp.pdb
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\EntityFramework.dll
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\EntityFramework.xml
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\Login.baml
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\MainWindow.baml
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\Register.baml
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.g.resources
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.Properties.Resources.resources
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.csproj.GenerateResource.cache
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.csproj.CoreCompileInputs.cache
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.csproj.CopyComplete
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.exe
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.pdb

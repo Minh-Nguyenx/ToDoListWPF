@@ -95,5 +95,12 @@ namespace ToDoListWPFApp
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        {
+            Login login  = new Login();
+            login.Show();
+            this.Close();
+        }
     }
 }
