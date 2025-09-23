@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ToDoListDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="idtask" />
+    </Key>
+    <Property Name="idtask" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="iduser" Type="int" Nullable="false" />
+    <Property Name="title" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="iscompleted" Type="bit" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="iduser" />
+    </Key>
+    <Property Name="iduser" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK_Task_User">
+    <End Role="User" Type="Self.User" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Task" Type="Self.Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="iduser" />
+      </Principal>
+      <Dependent Role="Task">
+        <PropertyRef Name="iduser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ToDoListDBModelStoreContainer">
+    <EntitySet Name="Task" EntityType="Self.Task" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Task_User" Association="Self.FK_Task_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Task" EntitySet="Task" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

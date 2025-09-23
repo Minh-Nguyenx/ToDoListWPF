@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ToDoListDBModelStoreContainer" CdmEntityContainer="ToDoListDBEntities">
+    <EntitySetMapping Name="Tasks">
+      <EntityTypeMapping TypeName="ToDoListDBModel.Task">
+        <MappingFragment StoreEntitySet="Task">
+          <ScalarProperty Name="idtask" ColumnName="idtask" />
+          <ScalarProperty Name="iduser" ColumnName="iduser" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="iscompleted" ColumnName="iscompleted" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ToDoListDBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="iduser" ColumnName="iduser" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

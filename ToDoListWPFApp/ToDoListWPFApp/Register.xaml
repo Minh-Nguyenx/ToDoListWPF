@@ -30,14 +30,14 @@
               
                 <TextBlock Text="Create account" FontSize="30" FontWeight="Bold" Margin="0,0,0,10" Foreground="#111"/>
                 <Label Content="Username"/>
-                <TextBox Height="48" FontSize="15" Padding="10" Margin="0,6" />
+                <TextBox x:Name="txtUserName" Height="48" FontSize="15" Padding="10" Margin="0,6" />
                 <Label Content="Password"/>
-                <TextBox Height="48" FontSize="15" Padding="10" Margin="0,6" />
+                <PasswordBox x:Name="txtPassWord" Height="48" FontSize="15" Padding="10" Margin="0,6" />
                 <Label Content="Pass word again"/>
-                <PasswordBox Height="48" FontSize="15" Padding="10" Margin="0,6"/>
+                <PasswordBox x:Name="txtPassWordAgain" Height="48" FontSize="15" Padding="10" Margin="0,6"/>
                 <Label Content="Email"/>
-                <PasswordBox Height="48" FontSize="15" Padding="10" Margin="0,6"/>
-                <Button Content="Register" Height="54" Margin="0,12,0,6" Style="{StaticResource PrimaryButton}"/>
+                <TextBox x:Name="txtEmail" Height="48" FontSize="15" Padding="10" Margin="0,6"/>
+                <Button Click="BtnRegister" Content="Register" Height="54" Margin="0,12,0,6" Style="{StaticResource PrimaryButton}"/>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,6">
                     <TextBlock Text="Already have an account? " VerticalAlignment="Center"/>
                     <TextBlock Foreground="#2a5fa8" VerticalAlignment="Center" Cursor="Hand">
