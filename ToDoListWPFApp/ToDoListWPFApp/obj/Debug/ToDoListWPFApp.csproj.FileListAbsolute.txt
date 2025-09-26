@@ -33,3 +33,6 @@ C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFA
 C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.csproj.CopyComplete
 C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.exe
 C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.pdb
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\TodoItemControl.baml
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\TodoItemControl.g.cs
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoApp.g.cs

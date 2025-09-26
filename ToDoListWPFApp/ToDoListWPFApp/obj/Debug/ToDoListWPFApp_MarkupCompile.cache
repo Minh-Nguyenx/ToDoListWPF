@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\nguye\source\repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\
 ToDoListWPFApp
 none
 false
 DEBUG;TRACE
-C:\Users\nguye\source\repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\App.xaml
-3-630875497
+C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\App.xaml
+5-553475731
 4246576123
-121013195805
-18819758218
-Login.xaml;MainWindow.xaml;Register.xaml;
+141340091904
+18-316948531
+Login.xaml;MainWindow.xaml;Register.xaml;ToDoApp.xaml;TodoItemControl.xaml;
 
 True
 
