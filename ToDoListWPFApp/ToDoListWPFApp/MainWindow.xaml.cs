@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.ObjectModel;
+using System.Data.Entity;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -12,14 +14,13 @@ namespace ToDoListWPFApp
     public partial class MainWindow : Window
     {
         ToDoListDBEntities db = new ToDoListDBEntities();
-
         public MainWindow()
         {
             InitializeComponent();
-           
+            LoadTasks();
         }
 
-        private void LoadTasks()
+        public void LoadTasks()
         {
             TasksPanel.Children.Clear();
 
@@ -42,6 +43,7 @@ namespace ToDoListWPFApp
             foreach (var task in tasks)
             {
                 var item = new TodoItemControl();
+                item.DataContext = task;
                 item.TaskTitle.Text = task.title;
                 item.TaskCheckBox.IsChecked = task.iscompleted;
                 TasksPanel.Children.Add(item);
@@ -59,17 +61,24 @@ namespace ToDoListWPFApp
                 return;
             }
 
-            var task = new ToDoListWPFApp.Task
+            var task = new Task
             {
                 iduser = idUser,
                 title = title,
-                iscompleted = false
+                iscompleted = false,
+                created_at = DateTime.Now
             };
 
             db.Tasks.Add(task);
             db.SaveChanges();
 
-            LoadTasks();
+            // Thêm thẳng vào UI
+            var item = new TodoItemControl();
+            item.DataContext = task;
+            item.TaskTitle.Text = task.title;
+            item.TaskCheckBox.IsChecked = task.iscompleted;
+            TasksPanel.Children.Add(item);
+
             NewTaskBox.Clear();
         }
     }

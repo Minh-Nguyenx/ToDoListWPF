@@ -36,3 +36,27 @@ C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFA
 C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\TodoItemControl.baml
 C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\TodoItemControl.g.cs
 C:\Users\nguye\Source\Repos\Minh-Nguyenx\ToDoListWPF\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoApp.g.cs
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\TodoItemControl.baml
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoApp.g.cs
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\TodoItemControl.g.cs
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.exe
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.pdb
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\ToDoListDB.mdf
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\ToDoListDB_log.ldf
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\ToDoListWPFApp.exe.config
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\ToDoListWPFApp.exe
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\ToDoListWPFApp.pdb
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\EntityFramework.dll
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\EntityFramework.SqlServer.dll
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\EntityFramework.xml
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\bin\Debug\EntityFramework.SqlServer.xml
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\Login.baml
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\MainWindow.baml
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\Register.baml
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoApp.baml
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.g.resources
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.Properties.Resources.resources
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.csproj.GenerateResource.cache
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.csproj.CoreCompileInputs.cache
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\ToDoListWPFApp.csproj.CopyComplete
+D:\CS 464 AE\TodoList\ToDoListWPFApp\ToDoListWPFApp\obj\Debug\GeneratedInternalTypeHelper.g.cs

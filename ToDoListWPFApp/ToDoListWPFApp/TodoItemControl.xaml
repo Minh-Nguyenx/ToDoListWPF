@@ -7,7 +7,7 @@
              d:DesignHeight="70" d:DesignWidth="600">
 
     <UserControl.Resources>
-        <!-- Nút icon có hover -->
+        <!-- Style cho nút icon -->
         <Style TargetType="Button" x:Key="IconButton">
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
@@ -29,14 +29,13 @@
             </Setter>
         </Style>
 
-        <!-- Animation cho border khi hover -->
+        <!-- Hiệu ứng hover cho border -->
         <Style TargetType="Border" x:Key="ItemContainer">
             <Setter Property="Background" Value="White"/>
             <Setter Property="CornerRadius" Value="8"/>
             <Setter Property="Padding" Value="10"/>
             <Setter Property="BorderBrush" Value="#DDD"/>
             <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="SnapsToDevicePixels" Value="True"/>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Trigger.EnterActions>
@@ -75,24 +74,34 @@
                       Margin="4"/>
 
             <!-- Nội dung công việc -->
-            <TextBlock x:Name="TaskTitle"
-                       Grid.Column="1"
-                       Text="Viết lại TodoItemControl"
-                       VerticalAlignment="Center"
-                       FontSize="16"
-                       Margin="10,0"
-                       TextWrapping="Wrap">
-                <TextBlock.Style>
-                    <Style TargetType="TextBlock">
-                        <Style.Triggers>
-                            <DataTrigger Binding="{Binding IsChecked, ElementName=TaskCheckBox}" Value="True">
-                                <Setter Property="TextDecorations" Value="Strikethrough"/>
-                                <Setter Property="Foreground" Value="Gray"/>
-                            </DataTrigger>
-                        </Style.Triggers>
-                    </Style>
-                </TextBlock.Style>
-            </TextBlock>
+            <Grid Grid.Column="1" Margin="10,0">
+                <!-- TextBlock hiển thị -->
+                <TextBlock x:Name="TaskTitle"
+                           Text="Nội dung công việc"
+                           FontSize="16"
+                           VerticalAlignment="Center"
+                           TextWrapping="Wrap">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsChecked, ElementName=TaskCheckBox}" Value="True">
+                                    <Setter Property="TextDecorations" Value="Strikethrough"/>
+                                    <Setter Property="Foreground" Value="Gray"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+
+                <!-- TextBox cho chế độ edit -->
+                <TextBox x:Name="TaskEditor"
+                         Text="{Binding ElementName=TaskTitle, Path=Text, Mode=TwoWay}"
+                         FontSize="16"
+                         Visibility="Collapsed"
+                         VerticalContentAlignment="Center"
+                         KeyDown="TaskEditor_KeyDown"
+                         LostFocus="TaskEditor_LostFocus"/>
+            </Grid>
 
             <!-- Nút sửa -->
             <Button Grid.Column="2"
