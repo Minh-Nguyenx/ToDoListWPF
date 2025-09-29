@@ -11,6 +11,7 @@
     <Property Name="created_at" Type="DateTime" Precision="3" />
     <Property Name="updated_at" Type="DateTime" Precision="3" />
     <NavigationProperty Name="User" Relationship="Self.FK_Task_User" FromRole="Task" ToRole="User" />
+    <Property Name="deadline" Type="DateTime" Precision="3" />
   </EntityType>
   <EntityType Name="User">
     <Key>

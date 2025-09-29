@@ -28,6 +28,47 @@ namespace ToDoListWPFApp
             // Đăng ký sự kiện thay đổi CheckBox
             TaskCheckBox.Checked += TaskCheckBox_Changed;
             TaskCheckBox.Unchecked += TaskCheckBox_Changed;
+
+            this.Loaded += TodoItemControl_Loaded;
+        }
+
+        private void TodoItemControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (CurrentTask != null && CurrentTask.deadline.HasValue)
+            {
+                DeadlineText.Text = "Hạn: " + CurrentTask.deadline.Value.ToString("dd/MM/yyyy HH:mm");
+
+                if (CurrentTask.iscompleted != true)
+                {
+                    DateTime now = DateTime.Now;
+                    DateTime deadline = CurrentTask.deadline.Value;
+
+                    if (deadline < now)
+                    {
+                        // Quá hạn
+                        DeadlineText.Foreground = Brushes.Red;
+                    }
+                    else if ((deadline - now).TotalMinutes <= 15)
+                    {
+                        // Sắp hết hạn (≤ 15 phút)
+                        DeadlineText.Foreground = Brushes.Orange;
+                    }
+                    else
+                    {
+                        // Bình thường
+                        DeadlineText.Foreground = Brushes.Gray;
+                    }
+                }
+                else
+                {
+                    // Nếu đã hoàn thành thì để xám
+                    DeadlineText.Foreground = Brushes.Gray;
+                }
+            }
+            else
+            {
+                DeadlineText.Text = "";
+            }
         }
 
         // ====== Edit ======

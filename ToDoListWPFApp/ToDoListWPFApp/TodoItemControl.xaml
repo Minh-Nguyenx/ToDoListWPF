@@ -75,23 +75,30 @@
 
             <!-- Nội dung công việc -->
             <Grid Grid.Column="1" Margin="10,0">
-                <!-- TextBlock hiển thị -->
-                <TextBlock x:Name="TaskTitle"
-                           Text="Nội dung công việc"
-                           FontSize="16"
-                           VerticalAlignment="Center"
-                           TextWrapping="Wrap">
-                    <TextBlock.Style>
-                        <Style TargetType="TextBlock">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding IsChecked, ElementName=TaskCheckBox}" Value="True">
-                                    <Setter Property="TextDecorations" Value="Strikethrough"/>
-                                    <Setter Property="Foreground" Value="Gray"/>
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBlock.Style>
-                </TextBlock>
+                <StackPanel>
+                    <!-- Tiêu đề công việc -->
+                    <TextBlock x:Name="TaskTitle"
+                   Text="Nội dung công việc"
+                   FontSize="16"
+                   TextWrapping="Wrap">
+                        <TextBlock.Style>
+                            <Style TargetType="TextBlock">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsChecked, ElementName=TaskCheckBox}" Value="True">
+                                        <Setter Property="TextDecorations" Value="Strikethrough"/>
+                                        <Setter Property="Foreground" Value="Gray"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+
+                    <!-- Hạn chót -->
+                    <TextBlock x:Name="DeadlineText"
+                   FontSize="12"
+                   Foreground="Gray"
+                   Margin="0,3,0,0"/>
+                </StackPanel>
 
                 <!-- TextBox cho chế độ edit -->
                 <TextBox x:Name="TaskEditor"

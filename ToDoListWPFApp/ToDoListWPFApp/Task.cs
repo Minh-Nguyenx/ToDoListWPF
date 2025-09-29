@@ -20,6 +20,7 @@ namespace ToDoListWPFApp
         public Nullable<bool> iscompleted { get; set; }
         public Nullable<System.DateTime> created_at { get; set; }
         public Nullable<System.DateTime> updated_at { get; set; }
+        public Nullable<System.DateTime> deadline { get; set; }
     
         public virtual User User { get; set; }
     }

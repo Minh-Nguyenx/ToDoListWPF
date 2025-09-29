@@ -17,6 +17,22 @@ namespace ToDoListWPFApp
         public MainWindow()
         {
             InitializeComponent();
+            DeadlinePicker.SelectedDate = DateTime.Today;
+
+            // Khởi tạo danh sách giờ (0-23)
+            for (int i = 0; i < 24; i++)
+            {
+                HourBox.Items.Add(i.ToString("D2"));
+            }
+            HourBox.SelectedIndex = DateTime.Now.Hour;
+
+            // Khởi tạo danh sách phút (0-59, cách 5 phút)
+            for (int i = 0; i < 60; i += 5)
+            {
+                MinuteBox.Items.Add(i.ToString("D2"));
+            }
+            MinuteBox.SelectedIndex = DateTime.Now.Minute / 5;
+
             LoadTasks();
         }
 
@@ -50,6 +66,17 @@ namespace ToDoListWPFApp
             }
         }
 
+        private DateTime? CombineDateTime(DateTime? date, object hourObj, object minuteObj)
+        {
+            if (!date.HasValue || hourObj == null || minuteObj == null)
+                return null;
+
+            int hour = int.Parse(hourObj.ToString());
+            int minute = int.Parse(minuteObj.ToString());
+
+            return date.Value.Date.AddHours(hour).AddMinutes(minute);
+        }
+
         private void AddTask_Click(object sender, RoutedEventArgs e)
         {
             string title = NewTaskBox.Text.Trim();
@@ -66,7 +93,8 @@ namespace ToDoListWPFApp
                 iduser = idUser,
                 title = title,
                 iscompleted = false,
-                created_at = DateTime.Now
+                created_at = DateTime.Now,
+                deadline = CombineDateTime(DeadlinePicker.SelectedDate, HourBox.SelectedItem, MinuteBox.SelectedItem)
             };
 
             db.Tasks.Add(task);
@@ -77,9 +105,23 @@ namespace ToDoListWPFApp
             item.DataContext = task;
             item.TaskTitle.Text = task.title;
             item.TaskCheckBox.IsChecked = task.iscompleted;
+            if (task.deadline.HasValue)
+            {
+                item.DeadlineText.Text = "Hạn: " + task.deadline.Value.ToString("dd/MM/yyyy");
+                if (task.deadline.Value.Date < DateTime.Today)
+                    item.DeadlineText.Foreground = Brushes.Red;
+            }
             TasksPanel.Children.Add(item);
-
             NewTaskBox.Clear();
+            DeadlinePicker.SelectedDate = DateTime.Today;
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            Login.userid = 0;
+            var loginWindow = new Login();
+            loginWindow.Show();
+            this.Close();
         }
     }
 }

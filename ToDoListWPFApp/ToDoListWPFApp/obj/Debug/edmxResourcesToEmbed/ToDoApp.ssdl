@@ -10,6 +10,7 @@
     <Property Name="iscompleted" Type="bit" />
     <Property Name="created_at" Type="datetime" />
     <Property Name="updated_at" Type="datetime" />
+    <Property Name="deadline" Type="datetime" />
   </EntityType>
   <EntityType Name="User">
     <Key>
